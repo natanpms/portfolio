@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+:root {
+  --color-navbar: #222222;
+  --color-principal: #000000;
+  --color-footer: #191919;
+
+}
+
+.plus-jakarta-sans-bold {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.plus-jakarta-sans-equal {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
