@@ -44,7 +44,7 @@ export default function Navbar() {
                     <ul className='flex justify-center gap-16'>
                         {menuList.map((list) => (
                             <li key={list.id}>
-                                <a className='font-semibold text-lg' href={list.transition}>{list.name}</a>
+                                <a className='font-semibold text-lg text-gray-300 hover:underline hover:text-white' href={list.transition}>{list.name}</a>
                             </li>
                         ))}
                     </ul>
