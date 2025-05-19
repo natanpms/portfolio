@@ -1,137 +1,84 @@
-export default function Experience() {
-    return (
-        <div style={{ backgroundColor: 'var(--color-principal)' }} className="flex flex-col justify-center items-center w-full min-h-screen  text-white px-4 mx-auto">
+import { BriefcaseBusiness, ChevronDown } from "lucide-react";
 
-            <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-                <li>
-                    <div className="timeline-middle">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            className="h-5 w-5"
-                        >
-                            <path
-                                fillRule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                clipRule="evenodd"
-                            />
-                        </svg>
-                    </div>
-                    <div className="timeline-start mb-10 md:text-end">
-                        <time className="font-mono italic">1984</time>
-                        <div className="text-lg font-black">First Macintosh computer</div>
-                        The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh
-                        personal computer. It played a pivotal role in establishing desktop publishing as a general
-                        office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed
-                        in a beige case with integrated carrying handle; it came with a keyboard and single-button
-                        mouse.
-                    </div>
-                    <hr />
-                </li>
-                <li>
-                    <hr />
-                    <div className="timeline-middle">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            className="h-5 w-5"
-                        >
-                            <path
-                                fillRule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                clipRule="evenodd"
-                            />
-                        </svg>
-                    </div>
-                    <div className="timeline-end md:mb-10">
-                        <time className="font-mono italic">1998</time>
-                        <div className="text-lg font-black">iMac</div>
-                        iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc. It has
-                        been the primary part of Apple's consumer desktop offerings since its debut in August 1998,
-                        and has evolved through seven distinct forms
-                    </div>
-                    <hr />
-                </li>
-                <li>
-                    <hr />
-                    <div className="timeline-middle">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            className="h-5 w-5"
-                        >
-                            <path
-                                fillRule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                clipRule="evenodd"
-                            />
-                        </svg>
-                    </div>
-                    <div className="timeline-start mb-10 md:text-end">
-                        <time className="font-mono italic">2001</time>
-                        <div className="text-lg font-black">iPod</div>
-                        The iPod is a discontinued series of portable media players and multi-purpose mobile devices
-                        designed and marketed by Apple Inc. The first version was released on October 23, 2001, about
-                        8+1⁄2 months after the Macintosh version of iTunes was released. Apple sold an estimated 450
-                        million iPod products as of 2022. Apple discontinued the iPod product line on May 10, 2022. At
-                        over 20 years, the iPod brand is the oldest to be discontinued by Apple
-                    </div>
-                    <hr />
-                </li>
-                <li>
-                    <hr />
-                    <div className="timeline-middle">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            className="h-5 w-5"
-                        >
-                            <path
-                                fillRule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                clipRule="evenodd"
-                            />
-                        </svg>
-                    </div>
-                    <div className="timeline-end md:mb-10">
-                        <time className="font-mono italic">2007</time>
-                        <div className="text-lg font-black">iPhone</div>
-                        iPhone is a line of smartphones produced by Apple Inc. that use Apple's own iOS mobile
-                        operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on
-                        January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As
-                        of November 1, 2018, more than 2.2 billion iPhones had been sold. As of 2022, the iPhone
-                        accounts for 15.6% of global smartphone market share
-                    </div>
-                    <hr />
-                </li>
-                <li>
-                    <hr />
-                    <div className="timeline-middle">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            className="h-5 w-5"
-                        >
-                            <path
-                                fillRule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                clipRule="evenodd"
-                            />
-                        </svg>
-                    </div>
-                    <div className="timeline-start mb-10 md:text-end">
-                        <time className="font-mono italic">2015</time>
-                        <div className="text-lg font-black">Apple Watch</div>
-                        The Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates fitness
-                        tracking, health-oriented capabilities, and wireless telecommunication, and integrates with
-                        iOS and other Apple products and services
-                    </div>
-                </li>
+export default function Experience() {
+
+    interface ContentLine {
+        id: number,
+        title: string;
+        description: string;
+        date: string,
+        tech: string[],
+        position: string
+    };
+
+    const content: ContentLine[] = [
+        {
+            id: 1,
+            title: "Estagiário em TI",
+            description: "Estágio no setor de T.I em análise de sistemas, instalação de Windows e Linux, formatação de sistemas,manutenção de rede, infraestrutura, suporte de chamados e manutenção de hardware. Ajudei na manutenção e desenvolvimento de um sistema web em php para fluxo de inventário dos colaboradores.",
+            date: "Fev de 2023 - Set de 2023",
+            tech: ["Linux", "Zabbix", "Suporte", "MySQL"],
+            position: "start"
+        },
+        {
+            id: 2,
+            title: "Desenvolvedor Web Trainee",
+            description: "Atuei no desenvolvimento e manutenção de um SaaS no mercado livre de energia, implementando novas funcionalidades e corrigindo bugs críticos no backend e frontend. Tenho experiência sólida em versionamento de código, inicialmente com AWS e, posteriormente, com BitBucket, onde gerenciei branches e pull requests.",
+            date: "Set de 2023 - Abril 2025",
+            tech: ["PHP", "jQuery", "EasyUI", "MySQL", "AWS", "Jira", "Python", "Google Cloud", "GIT"],
+            position: "end"
+
+        },
+        {
+            id: 3,
+            title: "Desenvolvedor Fullstack Jr",
+            description: "Desenvolvimento e manutenção de CRM no setor de veículos.",
+            date: "Mai 2025 - momento",
+            tech: ["PHP", "Laravel", "Next.JS", "MySQL", "MongoDB", "Jira", "GitLab", "GIT"],
+            position: "start"
+
+        }
+    ];
+
+    return (
+        <div id="xp" style={{ backgroundColor: 'var(--color-principal)' }} className="flex flex-col p-2 justify-center items-center w-full min-h-screen  text-white px-4 mx-auto">
+
+            <h2 className="text-3xl font-bold mt-14 border-l-4 border-[#6366f1] pl-4 mb-3">
+                Experiência profissional
+            </h2>
+            <p className="max-w-2xl  text-xl mt-4 mx-auto mb-12">
+                Minha trajetória profissional na área da computação, de estagiário a desenvolvedor fullstack,
+                demonstrando crescimento na construção de sistemas escaláveis e soluções financeiras.
+            </p>
+            <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical gap-3">
+                {content.map((list) => (
+                    console.log(list.tech),
+                    <li key={list.id} className="">
+                        <div className="timeline-middle">
+                            <BriefcaseBusiness />
+                        </div>
+                        <div className={`flex justify-center flex-col gap-2 cursor-pointer max-w-2xl bg-[#1a1a1a] p-6 rounded-lg border border-[#2a2a2a] hover:border-[#6366f1] transition-colors duration-300 timeline-${list.position} mb-10 md:text-end`}>
+                            <time className="font-mono italic text-[#6366f1]">{list.date}</time>
+                            <div className="text-lg font-black">{list.title}</div>
+                            <p>{list.description}</p>
+                            <div className="flex flex-wrap gap-2 mt-2">
+                                {list.tech.map((tech, index) => (
+                                    <div key={index} className="bg-[#080808] px-2 py-1 rounded-lg border border-[#2a2a2a] hover:border-[#6366f1] transition-colors duration-300">
+                                        <span>{tech}</span>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="flex justify-end gap-2">
+                                <ChevronDown className="text-[#6366f1]" />
+                                {/* criar evento para mostrar mais informações */}
+                                <span  className="text-[#6366f1] hover:underline"> Ver mais</span>
+                            </div>
+                        </div>
+                        <hr />
+                    </li>
+                ))}
+
+
             </ul>
         </div>
     );

@@ -3,7 +3,7 @@
 @import  "tw-animate-css";
 
 :root {
-  --color-navbar: #222222;
+  --color-navbar: #1a1a1a;
   --color-principal: #000000;
   --color-footer: #191919;
 
@@ -21,4 +21,8 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+html{
+  scroll-behavior: smooth;
 }

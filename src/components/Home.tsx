@@ -5,7 +5,7 @@ import ScrollDown from './ScrollDown';
 
 export default function Home() {
     return (
-        <div style={{ backgroundColor: 'var(--color-principal)' }} className="flex flex-col justify-center items-center w-full min-h-screen  text-white px-4 mx-auto">
+        <div id='home' style={{ backgroundColor: 'var(--color-principal)' }} className="flex flex-col justify-center items-center w-full min-h-screen  relative text-white px-4 mx-auto">
             {/* Avatar */}
             <div className="avatar mb-6 flex justify-center animate-in fade-in slide-in-from-top-8 duration-1000">
                 <div className="w-32 h-32 sm:w-48 sm:h-48 md:w-52 md:h-52 lg:w-64 lg:h-64 rounded-full shadow-lg overflow-hidden">
@@ -17,8 +17,8 @@ export default function Home() {
                 </div>
             </div>
             {/* Título */}
-            <h1 className=" animate-in fade-in slide-in-from-top-8 duration-1000 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl plus-jakarta-sans-bold text-center leading-tight">
-                Eu escrevo <span className="text-[#0967C2]">código</span> e<br />
+            <h1 className=" animate-in fade-in slide-in-from-top-8 duration-1000 text-3xl sm:text-4xl md:text-5xl lg:text-5 xl xl:text-5xl plus-jakarta-sans-bold text-center leading-tight">
+                Eu escrevo <span className="text-[#6366f1]">código</span> e<br />
                 desenvolvo <span className="text-pink-500">soluções!</span>
             </h1>
 
