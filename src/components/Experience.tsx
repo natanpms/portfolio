@@ -32,7 +32,7 @@ export default function Experience() {
         {
             id: 3,
             title: "Desenvolvedor Fullstack Jr",
-            description: "Desenvolvimento e manutenção de CRM no setor de veículos.",
+            description: "Desenvolvimento e manutenção de CRM no setor de concessionárias.",
             date: "Mai 2025 - momento",
             tech: ["PHP", "Laravel", "Next.JS", "MySQL", "MongoDB", "Jira", "GitLab", "GIT"],
             position: "start"
@@ -52,18 +52,17 @@ export default function Experience() {
             </p>
             <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical gap-3">
                 {content.map((list) => (
-                    console.log(list.tech),
                     <li key={list.id} className="">
-                        <div className="timeline-middle">
-                            <BriefcaseBusiness />
+                        <div className="timeline-middle rounded-full border p-2 border-[#6366f1]">
+                            <BriefcaseBusiness className="text-[#6366f1]"/>
                         </div>
-                        <div className={`flex justify-center flex-col gap-2 cursor-pointer max-w-2xl bg-[#1a1a1a] p-6 rounded-lg border border-[#2a2a2a] hover:border-[#6366f1] transition-colors duration-300 timeline-${list.position} mb-10 md:text-end`}>
+                        <div className={`flex justify-center flex-col gap-2 cursor-pointer max-w-2xl bg-[#1a1a1a] p-6 m-2 rounded-lg border border-[#2a2a2a] hover:border-[#6366f1] transition-colors duration-300 timeline-${list.position} mb-10 md:text-end`}>
                             <time className="font-mono italic text-[#6366f1]">{list.date}</time>
                             <div className="text-lg font-black">{list.title}</div>
                             <p>{list.description}</p>
-                            <div className="flex flex-wrap gap-2 mt-2">
+                            <div className="flex flex-wrap gap-2 mt-3 m-2">
                                 {list.tech.map((tech, index) => (
-                                    <div key={index} className="bg-[#080808] px-2 py-1 rounded-lg border border-[#2a2a2a] hover:border-[#6366f1] transition-colors duration-300">
+                                    <div key={index} className="bg-[#080808]  px-2 py-1 rounded-lg border border-[#2a2a2a] hover:border-[#6366f1] transition-colors duration-300">
                                         <span>{tech}</span>
                                     </div>
                                 ))}
@@ -74,7 +73,7 @@ export default function Experience() {
                                 <span  className="text-[#6366f1] hover:underline"> Ver mais</span>
                             </div>
                         </div>
-                        <hr />
+                        <hr className="bg-[#6366f1]" />
                     </li>
                 ))}
 

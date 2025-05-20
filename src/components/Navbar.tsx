@@ -20,10 +20,13 @@ export default function Navbar() {
     const isMobile = useIsMobile();
 
     return (
-        <div className={`fixed top-0 z-50 flex ${isMobile ? 'justify-between' : 'justify-around'} items-center w-full h-20 p-4 text-white plus-jakarta-sans-equal`} style={{ backgroundColor: 'var(--color-navbar)' }}>
+        <div
+            className={`fixed top-0 left-1/2 transform -translate-x-1/2 z-50 flex  justify-between rounded-full shadow-md mt-4 items-center ${isMobile ? 'w-2/3' : 'w-1/3'} h-20 p-4 text-white plus-jakarta-sans-equal`}
+            style={{ backgroundColor: 'var(--color-navbar)' }}
+        >
             {/* logo */}
-            <div>
-                logo                
+            <div className='text-xl font-bold text-white'>
+                <span className="text-[#6366f1]">Dev</span> Natan Silva
             </div>
 
             {isMobile ? (
@@ -41,7 +44,7 @@ export default function Navbar() {
                 </div>
             ) : (
                 <nav>
-                    <ul className='flex justify-center gap-16'>
+                    <ul className='flex justify-center  gap-8'>
                         {menuList.map((list) => (
                             <li key={list.id}>
                                 <a className='font-semibold text-lg text-gray-300 hover:underline hover:text-white' href={list.transition}>{list.name}</a>
