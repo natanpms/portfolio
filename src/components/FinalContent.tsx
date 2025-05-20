@@ -25,7 +25,7 @@ export default function FinalContent() {
 
 
     return (
-        <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-8">
+        <footer id='contact' className="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-8">
             <aside className="grid-flow-col items-center">
                 <p className=' text-base plus-jakarta-sans-equal'>Natan Silva © {new Date().getFullYear()} - Todos os direitos reservados</p>
             </aside>
