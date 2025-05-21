@@ -23,7 +23,7 @@ export default function Experience() {
         {
             id: 2,
             title: "Desenvolvedor Web Trainee",
-            description: "Atuei no desenvolvimento e manutenção de um SaaS no mercado livre de energia, implementando novas funcionalidades e corrigindo bugs críticos no backend e frontend. Tenho experiência sólida em versionamento de código, inicialmente com AWS e, posteriormente, com BitBucket, onde gerenciei branches e pull requests.",
+            description: "Atuei no desenvolvimento e manutenção de um SaaS no mercado livre de energia, implementando novas funcionalidades e corrigindo bugs críticos no backend e frontend.",
             date: "Set de 2023 - Abril 2025",
             tech: ["PHP", "jQuery", "EasyUI", "MySQL", "AWS", "Jira", "Python", "Google Cloud", "GIT"],
             position: "end"
@@ -46,7 +46,7 @@ export default function Experience() {
             <h2 className="text-3xl font-bold mt-14 border-l-4 border-[#6366f1] pl-4 mb-3">
                 Experiência profissional
             </h2>
-            <p className="max-w-2xl  text-xl mt-4 mx-auto mb-12">
+            <p className="max-w-2xl  text-sm md:text-xl mt-4 mx-auto mb-12">
                 Minha trajetória profissional na área da computação, de estagiário a desenvolvedor fullstack,
                 demonstrando crescimento na construção de sistemas escaláveis e soluções financeiras.
             </p>
