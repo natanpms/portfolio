@@ -30,7 +30,7 @@ export default function ScrollTop() {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className="fixed bottom-4 right-8 z-50"
+          className="fixed bottom-14 right-8 z-50"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.5 }}
