@@ -13,6 +13,7 @@ export default function Navbar() {
     const menuList: MenuItem[] = [
         { id: 1, name: 'Home', transition: '#home' },
         { id: 3, name: 'Experiência', transition: '#xp' },
+        { id: 3, name: 'Projetos', transition: '#projects' },
         { id: 4, name: 'Contato', transition: '#contact' },
     ];
 

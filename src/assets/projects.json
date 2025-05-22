@@ -1,0 +1,45 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "name": "Check In App",
+            "description": "Aplicativo híbrido e PWA no qual busca localização utilizando APIs da Web e do Capacitor para aplicações mobile.",
+            "link" : "https://github.com/natanpms/check-in",
+            "deploy" : true,
+            "link_deploy": "https://check-in-seven-beta.vercel.app/"
+        },
+        {
+            "id": 1,
+            "name": "securityNote",
+            "description": "App pwa que utiliza webAuth para autenticação e utiliza speech recognition API para anotação por voz.",
+            "link" : "https://github.com/natanpms/securityNote",
+            "deploy" : true,
+            "link_deploy": "https://securitynote.netlify.app/"
+        },
+        {
+            "id": 2,
+            "name": "Newspaper",
+            "description": "Aaplicação web fullstack que oferece aos usuários a capacidade de ler notícias relacionadas à Apple de todo o mundo, que consome a API de notícias da NewsAPI.",
+            "link": "https://github.com/natanpms/newspaperProject",
+            "deploy" : false,
+            "link_deploy": ""
+
+        },
+        {
+            "id": 3,
+            "name": "Pokedex",
+            "description": "Pokedex responsiva pensando em mobile first desenvolvida com Javascript, consumindo a pokeAPI.",
+            "link" : "https://github.com/natanpms/Pokedex",
+            "deploy" : true,
+            "link_deploy": "https://ipokedex1.netlify.app/"
+        },
+        {
+            "id": 4,
+            "name": "Jogo da velha",
+            "description": "Jogo da velha desenvolvido em java para treinar lógica de programação.",
+            "link" : "https://github.com/natanpms/jogo-da-velha",
+            "deploy": false,
+            "link_deploy" : ""
+        }
+    ]
+}

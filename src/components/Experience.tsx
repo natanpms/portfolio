@@ -1,4 +1,5 @@
 import { BriefcaseBusiness, ChevronDown } from "lucide-react";
+import '../App.css';
 
 export default function Experience() {
 

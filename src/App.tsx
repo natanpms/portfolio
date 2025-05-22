@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import ScrollTop from './components/ScrollTop'
 // @ts-ignore
 import FinalContent from './components/FinalContent'
+import Projects from './components/Projects'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Home />
       <Experience />
+      <Projects />
       <FinalContent />
       <ScrollTop />
     </>
