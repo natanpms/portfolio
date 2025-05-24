@@ -11,6 +11,7 @@ import { CloudDownload, Github } from 'lucide-react';
 
 interface DataProps {
     id: number;
+    ies_finally: boolean;
     name: string;
     description: string;
     link: string;
@@ -24,23 +25,23 @@ export default function Projects() {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3, 
-    slidesToScroll: 3,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         responsive: [
-        {
-            breakpoint: 1024, // tablets ou notebooks menores
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
+            {
+                breakpoint: 1024, // tablets ou notebooks menores
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                },
             },
-        },
-        {
-            breakpoint: 768, // mobile
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            },
-        }
+            {
+                breakpoint: 768, // mobile
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            }
         ],
         appendDots: (dots: any) => (
             <div
@@ -93,7 +94,13 @@ export default function Projects() {
                                     src={projectPic}
                                     alt="project"
                                 />
-                                <h3 className="text-xl font-bold mb-2">{project.name}</h3>
+                                <div className='flex justify-around items-center gap-7 mb-2'>
+                                    <h3 className="text-regular font-bold ">{project.name}</h3>
+                                    <div className={`badge badge-outline badge-sm ${project.ies_finally ? "badge-success" : "badge-warning"}`}>
+                                        <svg className="size-[1em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor" strokeLinejoin="miter" strokeLinecap="butt"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" strokeLinecap="square" stroke-miterlimit="10" strokeWidth="2"></circle><polyline points="7 13 10 16 17 8" fill="none" stroke="currentColor" strokeLinecap="square" stroke-miterlimit="10" strokeWidth="2"></polyline></g></svg>
+                                        {project.ies_finally ? "Finalizado" : "Em andamento"}
+                                    </div>
+                                </div>
                                 <p className="text-sm">{project.description}</p>
 
                                 <div className='flex justify-between gap-4 items-center'>

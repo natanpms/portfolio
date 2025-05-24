@@ -18,21 +18,21 @@ export default function Experience() {
     const content: ContentLine[] = [
         {
             id: 1,
-            title: "Estagiário em TI",
-            description: "Estágio no setor de T.I em análise de sistemas e infraestrutura.",
-            date: "Fev de 2023 - Set de 2023",
-            tech: ["Linux", "Zabbix", "Suporte", "MySQL"],
+            title: "Desenvolvedor Fullstack Jr",
+            description: "Desenvolvimento e manutenção de CRM no setor de concessionárias.",
+            date: "Mai 2025 - momento",
+            tech: ["PHP", "Laravel", "Next.JS", "MySQL", "MongoDB", "Jira", "GitLab", "GIT"],
             position: "start",
             description_final: `<p>
-                                No dia a dia, trabalhei com metodologias ágeis (Kanban), utilizando Jira para acompanhamento de tarefas.Além disso, auxiliei no onboarding de novos membros, facilitando a adaptação ao TI da empresa.
+                                No dia a dia, trabalhei com metodologias ágeis(Kanban e Scrum) ,utilizando Jira para acompanhamento de tarefas no board, garantindo entregas eficientes e alinhamento com o time. Além de participar de daily's e reuniões técnicas.
                                 </p>
                                 <ul class="list-disc list-inside space-y-1 mt-4 text-wrap">
-                                <li class="text-sm">Instalação de Windows e Linux</li>
-                                <li class="text-sm">Formatação de sistemas e manutenção de rede,</li>
-                                <li class="text-sm">Suporte de chamados e manutenção de hardware</li>
-                                <li class="text-sm">Monitoramento via Zabbix</li>
-                                <li class="text-sm">Manutenção e desenvolvimento de um sistema web desenvolvido com <strong>HTML,JS, Bootstrap, PHP e MySQL</strong> para fluxo de inventário dos colaboradores.</li>
+                                <li class="text-sm">Implementação de templates gerenciáveis utilizando <strong> Next.JS e TailwindCSS</strong>.</li>
+                                <li class="text-sm">Versionamento com GitLab.</li>
+                                <li class="text-sm">COntainerização do ambiente com Docker</li>
+                                <li class="text-sm">Manutenção e implementação de features em sistemas legados utilizando <strong>Code Igniter </strong>.</li>
                                 </ul>`
+
         },
         {
             id: 2,
@@ -52,32 +52,31 @@ export default function Experience() {
                                 </ul>`
 
         },
-        {
+         {
             id: 3,
-            title: "Desenvolvedor Fullstack Jr",
-            description: "Desenvolvimento e manutenção de CRM no setor de concessionárias.",
-            date: "Mai 2025 - momento",
-            tech: ["PHP", "Laravel", "Next.JS", "MySQL", "MongoDB", "Jira", "GitLab", "GIT"],
+            title: "Estagiário em TI",
+            description: "Estágio no setor de T.I em análise de sistemas e infraestrutura.",
+            date: "Fev de 2023 - Set de 2023",
+            tech: ["Linux", "Zabbix", "Suporte", "MySQL"],
             position: "start",
             description_final: `<p>
-                                No dia a dia, trabalhei com metodologias ágeis(Kanban e Scrum) ,utilizando Jira para acompanhamento de tarefas no board, garantindo entregas eficientes e alinhamento com o time. Além de participar de daily's e reuniões técnicas.
+                                No dia a dia, trabalhei com metodologias ágeis (Kanban), utilizando Jira para acompanhamento de tarefas.Além disso, auxiliei no onboarding de novos membros, facilitando a adaptação ao TI da empresa.
                                 </p>
                                 <ul class="list-disc list-inside space-y-1 mt-4 text-wrap">
-                                <li class="text-sm">Implementação de templates gerenciáveis utilizando <strong> Next.JS e TailwindCSS</strong>.</li>
-                                <li class="text-sm">Versionamento com GitLab.</li>
-                                <li class="text-sm">COntainerização do ambiente com Docker</li>
-                                <li class="text-sm">Manutenção e implementação de features em sistemas legados utilizando <strong>Code Igniter </strong>.</li>
+                                <li class="text-sm">Instalação de Windows e Linux</li>
+                                <li class="text-sm">Formatação de sistemas e manutenção de rede,</li>
+                                <li class="text-sm">Suporte de chamados e manutenção de hardware</li>
+                                <li class="text-sm">Monitoramento via Zabbix</li>
+                                <li class="text-sm">Manutenção e desenvolvimento de um sistema web desenvolvido com <strong>HTML,JS, Bootstrap, PHP e MySQL</strong> para fluxo de inventário dos colaboradores.</li>
                                 </ul>`
-
         }
     ];
 
-    const [selectedItem, setSelectedItem] = useState(null);
+    const [selectedItem, setSelectedItem] = useState<ContentLine | null>(null);
 
     useEffect(() => {
         if (selectedItem) {
-            document.getElementById('dlg').showModal();
-
+            (document.getElementById('dlg') as HTMLDialogElement)?.showModal();
         }
     }, [selectedItem])
 
