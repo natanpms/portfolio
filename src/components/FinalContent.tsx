@@ -33,7 +33,7 @@ export default function FinalContent() {
                {items.map((item) => (
                 <div key={item.id} className='flex justify-center flex-col gap-2 cursor-pointer max-w-2xl bg-[#1a1a1a] p-3 m-2 rounded-lg border border-[#2a2a2a] hover:border-[#6366f1]'>
                     <a href={item.link} target='_blank'>
-                        <img src={icons[item.name]} alt={`${item.name} Icon`}  width={25} height={25} />
+                        <img src={icons[item.name]} alt={`${item.name} Icon`}  width={20} height={20} />
                     </a>
                 </div>
                ))}

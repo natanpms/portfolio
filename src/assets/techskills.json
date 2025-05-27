@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "PHP",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+  },
+  {
+    "id": 2,
+    "title": "Laravel",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+  },
+  {
+    "id": 3,
+    "title": "CodeIgniter",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/codeigniter/codeigniter-plain.svg"
+  },
+  {
+    "id": 4,
+    "title": "Javascript",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+  },
+  {
+    "id": 5,
+    "title": "Next.JS",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+  },
+  {
+    "id": 6,
+    "title": "React.JS",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+  },
+  {
+    "id": 7,
+    "title": "jQuery",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg"
+  },
+  {
+    "id": 8,
+    "title": "Tailwind CSS",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg"
+  },
+  {
+    "id": 9,
+    "title": "Bootstrap",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+  },
+  {
+    "id": 10,
+    "title": "HTML5",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+  },
+  {
+    "id": 11,
+    "title": "MySQL",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+  },
+  {
+    "id": 12,
+    "title": "AWS",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+  },
+  {
+    "id": 13,
+    "title": "Google Cloud",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"
+  },
+  {
+    "id": 14,
+    "title": "Git",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+  },
+  {
+    "id": 15,
+    "title": "GitLab",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg"
+  },
+  {
+    "id": 16,
+    "title": "Jira",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg"
+  },
+  {
+    "id": 17,
+    "title": "Postman",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+  },
+  {
+    "id": 18,
+    "title": "Vscode",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+  },
+  {
+    "id": 19,
+    "title": "Docker",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+  },
+  {
+    "id": 20,
+    "title": "Linux",
+    "path_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+  }
+]
