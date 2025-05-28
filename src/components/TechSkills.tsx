@@ -19,7 +19,7 @@ export default function TechSkills() {
             <p className="max-w-2xl  text-sm md:text-xl mt-4 mx-auto mb-12">
                 As tecnologias e ferramentas que utilizo para construir sistemas e desenvolver meus projetos.
             </p>
-            <div className='grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2'>
+            <div className='grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2'>
                 {data.map((skill : TechProps) => (
                     <div key={skill.id} data-tip={skill.title} className={`tooltip gap-2 cursor-pointer  p-2 bg-[#1a1a1a] m-2 rounded-lg border border-[#2a2a2a] hover:border-[#6366f1] transition-colors duration-300 mb-10`}>
                         <img src={skill.path_icon} alt={`${skill.title} Icon`}  className="w-17 h-17"/>

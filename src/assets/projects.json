@@ -1,7 +1,7 @@
 {
     "projects": [
         {
-            "id": 0,
+            "id": 1,
             "ies_finally": true,
             "name": "Check In App",
             "description": "Aplicativo híbrido e PWA no qual busca localização utilizando APIs da Web e do Capacitor para aplicações mobile.",
@@ -10,7 +10,7 @@
             "link_deploy": "https://check-in-seven-beta.vercel.app/"
         },
         {
-            "id": 1,
+            "id": 2,
             "ies_finally": true,
             "name": "securityNote",
             "description": "App pwa que utiliza webAuth para autenticação e utiliza speech recognition API para anotação por voz.",
@@ -19,7 +19,7 @@
             "link_deploy": "https://securitynote.netlify.app/"
         },
         {
-            "id": 2,
+            "id": 3,
             "ies_finally": true,
             "name": "Newspaper",
             "description": "Aaplicação web fullstack que oferece aos usuários a capacidade de ler notícias relacionadas à Apple de todo o mundo, que consome a API de notícias da NewsAPI.",
@@ -29,7 +29,7 @@
 
         },
         {
-            "id": 3,
+            "id": 4,
             "ies_finally": true,
             "name": "Pokedex",
             "description": "Pokedex responsiva pensando em mobile first desenvolvida com Javascript, consumindo a pokeAPI.",
@@ -38,7 +38,7 @@
             "link_deploy": "https://ipokedex1.netlify.app/"
         },
         {
-            "id": 4,
+            "id": 5,
             "ies_finally": true,
             "name": "Jogo da velha",
             "description": "Jogo da velha desenvolvido em java para treinar lógica de programação.",
@@ -47,7 +47,7 @@
             "link_deploy" : ""
         },
         {
-            "id": 5,
+            "id": 6,
             "ies_finally": false,
             "name": "PrioriTask",
             "description": "Aplicação fullstack com intuito de gerenciar tarefas e rotina no dia a dia. Projeto utilizando Laravel, Inertia.JS, React.JS e TailwindCSS.",

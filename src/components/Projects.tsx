@@ -6,7 +6,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import projectPic from '../assets/Brackets logo.jpeg'
-import { CloudDownload, Github } from 'lucide-react';
+import { CircleCheckBig, Clock, CloudDownload, FolderOpenDot, Funnel, Github } from 'lucide-react';
+import { useIsMobile } from '../hooks/useIsMobile';
+import { useEffect, useState } from 'react';
 
 
 interface DataProps {
@@ -20,10 +22,31 @@ interface DataProps {
 }
 
 export default function Projects() {
+    type FilterType = 'finalizado' | 'andamento' | null;
+    const [projectsFiltered, setProjectsFiltered] = useState<DataProps[]>([]);
+    // filtro aplicado pelo usuário
+    const [filter, setFilter] = useState<FilterType>(null);
+
+    useEffect(() => {
+        if (filter) {
+            const filterProjetct = data.projects.filter((project) => {
+                const isFinally = filter === "finalizado"; //retorna true ou false de acordo com filtro
+                return project.ies_finally === isFinally;
+            });
+
+
+            setProjectsFiltered(filterProjetct);
+        } else {
+            setProjectsFiltered(data.projects);
+        }
+
+    }, [data, filter]);
+
+    const isMobile = useIsMobile();
 
     const settings = {
         dots: true,
-        infinite: true,
+        infinite: projectsFiltered.length > 3,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -83,12 +106,29 @@ export default function Projects() {
                 Abaixo está alguns de meus projetos pessoais que usei para aprender novas ferramentas, exercitar codificação e colocar minhas habilidades a mostra.
             </p>
 
-
+            <div className="flex justify-end items-end w-full pr-8 lg:w-3/5 lg:pr-4 mx-auto mb-4">
+                <div className={`dropdown ${isMobile ? 'dropdown-center' : 'dropdown-left'}`}>
+                    <div tabIndex={0} role="button" className="btn  border-transparent hover:border-[#6366f1] transition-colors duration-300 ease-in-out bg-[#2a2a2a] shadow-none text-white  m-1 px-6 rounded-md">
+                        <Funnel />
+                        <span className="text-sm">Filtrar Projetos</span>
+                    </div>
+                    <ul style={{ backgroundColor: 'var(--color-navbar)' }} tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm border-2 border-[#2a2a2a]">
+                        <li>
+                            <button className='text-sm' onClick={(() => setFilter('finalizado'))}><CircleCheckBig width={18} height={18} /> Finalizado</button></li>
+                        <li>
+                            <button className='text-sm' onClick={(() => setFilter('andamento'))}><Clock width={18} height={18} /> Em andamento</button>
+                        </li>
+                        <li>
+                            <button className='text-sm' onClick={() => setFilter(null)}><FolderOpenDot width={18} height={18} /> Todos</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div className="w-full max-w-6xl px-4 pb-10">
                 <Slider {...settings}>
-                    {data.projects.map((project: DataProps) => (
+                    {projectsFiltered.map((project: DataProps) => (
                         <div key={project.id} className="px-4">
-                            <div className='flex flex-col gap-4 justify-center items-center  bg-[#1a1a1a] rounded-lg border border-[#2a2a2a] overflow-hidden hover:border-[#6366f1] mb-4 p-6 h-[430px]'>
+                            <div className='flex flex-col gap-4 justify-center items-center  bg-[#1a1a1a] rounded-lg border border-[#2a2a2a] overflow-hidden hover:border-[#6366f1] transition-colors duration-300 ease-in-out mb-4 p-6 h-[430px]'>
                                 <img
                                     className="w-full h-48 object-cover"
                                     src={projectPic}
