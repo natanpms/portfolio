@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
-@import  "tw-animate-css";
+@import "tw-animate-css";
 
 :root {
   --color-navbar: #1a1a1a;
@@ -23,6 +23,15 @@
   font-style: normal;
 }
 
-html{
+html {
   scroll-behavior: smooth;
+}
+
+.custom-dots .slick-active .dot {
+  @apply bg-primary;
+}
+
+.custom-dots .dot:hover {
+  @apply bg-primary;
+  cursor: pointer;
 }

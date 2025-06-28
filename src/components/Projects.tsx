@@ -24,7 +24,7 @@ interface DataProps {
 export default function Projects() {
     type FilterType = 'finalizado' | 'andamento' | null;
     const [projectsFiltered, setProjectsFiltered] = useState<DataProps[]>([]);
-    // filtro aplicado pelo usuário
+
     const [filter, setFilter] = useState<FilterType>(null);
 
     useEffect(() => {
@@ -45,7 +45,8 @@ export default function Projects() {
     const isMobile = useIsMobile();
 
     const settings = {
-        dots: true,
+        dots: isMobile ? true : false,
+        arrows: isMobile ? false : true,
         infinite: projectsFiltered.length > 3,
         speed: 500,
         slidesToShow: 3,
@@ -67,29 +68,23 @@ export default function Projects() {
             }
         ],
         appendDots: (dots: any) => (
-            <div
-                style={{
-                    paddingTop: "15px",
-                }}
-            >
-                <ul className="custom-dots" style={{ marginTop: "5px", display: "flex", gap: "12px", justifyContent: "center", textAlign: "center" }}>
+            <div style={{ paddingTop: "15px" }}>
+                <ul
+                    className="custom-dots"
+                    style={{
+                        marginTop: "5px",
+                        display: "flex",
+                        gap: "12px",
+                        justifyContent: "center",
+                        textAlign: "center",
+                    }}
+                >
                     {dots}
                 </ul>
             </div>
         ),
-        customPaging: (i: any) => (
-            <div
-                style={{
-                    width: "30px",
-                    color: "white",
-                    border: "2px #6366f1 solid",
-                    backgroundColor: "transparent",
-                    borderRadius: "100%",
-                    height: "30px",
-                }}
-            >
-                {i + 1}
-            </div>
+        customPaging: (i: number) => (
+            <div className="dot w-5 h-5 border-2 border-primary rounded-full transition duration-300" />
         )
     };
 
@@ -97,7 +92,7 @@ export default function Projects() {
         <div
             id="projects"
             style={{ backgroundColor: 'var(--color-principal)' }}
-            className="flex flex-col p-2 justify-center items-center w-full min-h-screen text-white px-4 mx-auto"
+            className="flex flex-col p-2 justify-center items-start lg:items-center w-full min-h-screen text-white px-4 mx-auto"
         >
             <h2 className="text-3xl font-bold mt-14 border-l-4 border-[#6366f1] pl-4 mb-3">
                 Projetos pessoais
@@ -128,7 +123,7 @@ export default function Projects() {
                 <Slider {...settings}>
                     {projectsFiltered.map((project: DataProps) => (
                         <div key={project.id} className="px-4">
-                            <div className='flex flex-col gap-4 justify-center items-center  bg-[#1a1a1a] rounded-lg border border-[#2a2a2a] overflow-hidden hover:border-[#6366f1] transition-colors duration-300 ease-in-out mb-4 p-6 h-[430px]'>
+                            <div className='flex flex-col gap-4 justify-center items-center  bg-[#1a1a1a] rounded-lg border border-[#2a2a2a] overflow-hidden hover:border-[#6366f1] transition-colors duration-300 ease-in-out mb-4 p-6 h-[450px] w-[78vw] lg:w-full'>
                                 <img
                                     className="w-full h-48 object-cover"
                                     src={projectPic}

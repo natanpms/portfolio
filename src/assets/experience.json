@@ -4,7 +4,7 @@
     "title": "Desenvolvedor Fullstack Jr",
     "description": "Desenvolvimento e manutenção de CRM no setor de concessionárias.",
     "date": "Mai 2025 - momento",
-    "tech": ["PHP","CodeIgniter", "Laravel", "Next.JS", "MySQL", "MongoDB", "Jira", "GitLab", "GIT", "Docker"],
+    "tech": ["PHP","CodeIgniter", "Laravel", "Next.JS", "Tailwind CSS", "Jira",  "GitLab", "GIT", "Docker"],
     "position": "start",
     "description_final": "<p>No dia a dia, trabalhei com metodologias ágeis(Kanban e Scrum) ,utilizando Jira para acompanhamento de tarefas no board, garantindo entregas eficientes e alinhamento com o time. Além de participar de daily's e reuniões técnicas.</p><ul class=\"list-disc list-inside space-y-1 mt-4 text-wrap\"><li class=\"text-sm\">Implementação de templates gerenciáveis utilizando <strong> Next.JS e TailwindCSS</strong>.</li><li class=\"text-sm\">Versionamento com GitLab.</li><li class=\"text-sm\">COntainerização do ambiente com Docker</li><li class=\"text-sm\">Manutenção e implementação de features em sistemas legados utilizando <strong>Code Igniter </strong>.</li></ul>"
   },

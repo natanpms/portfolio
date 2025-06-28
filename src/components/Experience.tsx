@@ -27,7 +27,7 @@ export default function Experience() {
     }, [selectedItem])
 
     return (
-        <div id="xp" style={{ backgroundColor: 'var(--color-principal)' }} className="flex flex-col p-2 justify-center items-center w-full min-h-screen  text-white px-4 mx-auto">
+        <div id="xp" style={{ backgroundColor: 'var(--color-principal)' }} className="flex flex-col p-2 justify-center items-start lg:items-center w-full min-h-screen  text-white px-4 mx-auto">
 
             <h2 className="text-2xl font-bold mt-14 border-l-4 border-[#6366f1] pl-4 mb-3">
                 Experiência profissional

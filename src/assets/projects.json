@@ -50,7 +50,16 @@
             "id": 6,
             "ies_finally": false,
             "name": "PrioriTask",
-            "description": "Aplicação fullstack com intuito de gerenciar tarefas e rotina no dia a dia. Projeto utilizando Laravel, Inertia.JS, React.JS e TailwindCSS.",
+            "description": "Aplicação com intuito de gerenciar tarefas e rotina no dia a dia. Projeto utilizando LeafPHP para criação da API REST, Next.JS e TailwindCSS .",
+            "link" : "https://github.com/natanpms/prioriTask",
+            "deploy": false,
+            "link_deploy" : ""
+        },
+         {
+            "id": 7,
+            "ies_finally": false,
+            "name": "Monetus App",
+            "description": "Aplicação mobile de gerenciamento de finanças pessoais. Projeto desenvolvido em React Native e Firebase para compor o backend.",
             "link" : "https://github.com/natanpms/prioriTask",
             "deploy": false,
             "link_deploy" : ""

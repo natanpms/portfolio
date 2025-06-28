@@ -11,15 +11,17 @@ import TechSkills from './components/TechSkills'
 function App() {
 
   return (
-    <>
-      <Navbar />
-      <Home />
-      <TechSkills />
-      <Experience />
-      <Projects />
-      <FinalContent />
-      <ScrollTop />
-    </>
+    <main className='w-full'>
+        <Navbar />
+        <Home />
+        <TechSkills />
+        <Experience />
+        <Projects />
+        <FinalContent />
+        <ScrollTop />
+
+    </main>
+
   )
 }
 

@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed top-0 left-1/2 transform -translate-x-1/2 z-50 flex justify-between rounded-full shadow-md mt-4 items-center ${
+      className={`fixed z-50 flex justify-between lg:justify-evenly w-full shadow-md  items-center ${
         isMobile ? 'w-2/3' : 'w-1/3'
       } h-20 p-4 text-white plus-jakarta-sans-equal`}
       style={{ backgroundColor: 'var(--color-navbar)' }}
@@ -35,10 +35,10 @@ export default function Navbar() {
       </div>
 
       {isMobile ? (
-        <div className="relative dropdown dropdown-end ">
+        <div className="relative dropdown dropdown-end border-none">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="btn btn-circle bg-transparent text-white border-none swap swap-rotate"
+            className="btn btn-circle bg-transparent text-white border-none shadow-none swap swap-rotate "
             aria-expanded={menuOpen}
             aria-haspopup="true"
           >
@@ -71,7 +71,7 @@ export default function Navbar() {
             <ul
               tabIndex={0}
               style={{ backgroundColor: 'var(--color-navbar)' }}
-              className="menu dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 absolute right-0"
+              className="menu dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 absolute -right-4"
             >
               {menuList.map((list) => (
                 <li key={list.id}>
